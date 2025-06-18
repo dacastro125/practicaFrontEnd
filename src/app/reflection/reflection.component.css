@@ -1,0 +1,219 @@
+.contenedor {
+  padding: 20px;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #2d2d2d;
+  max-width: 90%;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+.texto {
+  font-size: 1.8em;
+  color: white;
+  line-height: 1.6;
+  text-align: center;
+  margin: 0;
+  margin-bottom: 40px;
+  white-space: pre-line;
+  font-weight: 400;
+  letter-spacing: 0.5px;
+  width: 100%;
+  max-width: 800px;
+}
+
+.cursor {
+  animation: blink 1s infinite;
+  color: white;
+}
+
+.botones {
+  display: flex;
+  gap: 20px;
+  animation: fadeInUp 0.5s ease-out;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 100%;
+}
+
+.boton {
+  display: inline-block;
+  padding: 15px 40px;
+  background-color: white;
+  color: #2d2d2d;
+  text-decoration: none;
+  border-radius: 50px;
+  font-size: 1.1em;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(255, 255, 255, 0.2);
+  text-align: center;
+  min-width: 120px;
+}
+
+.boton:hover {
+  background-color: #f0f0f0;
+  transform: translateY(-3px);
+  box-shadow: 0 6px 20px rgba(255, 255, 255, 0.3);
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes blink {
+  0%, 50% {
+    opacity: 1;
+  }
+  51%, 100% {
+    opacity: 0;
+  }
+}
+
+/* Tablets y pantallas medianas */
+@media screen and (max-width: 1024px) {
+  .contenedor {
+    padding: 30px 20px;
+    max-width: 95%;
+  }
+  
+  .texto {
+    font-size: 1.6em;
+    margin-bottom: 35px;
+    max-width: 700px;
+  }
+  
+  .boton {
+    padding: 14px 35px;
+    font-size: 1.05em;
+  }
+}
+
+/* Tablets pequeñas */
+@media screen and (max-width: 768px) {
+  .contenedor {
+    padding: 25px 15px;
+    justify-content: flex-start;
+    padding-top: 60px;
+  }
+  
+  .texto {
+    font-size: 1.4em;
+    line-height: 1.5;
+    margin-bottom: 30px;
+    max-width: 600px;
+  }
+  
+  .botones {
+    gap: 15px;
+  }
+  
+  .boton {
+    padding: 12px 30px;
+    font-size: 1em;
+    min-width: 100px;
+  }
+}
+
+/* Móviles */
+@media screen and (max-width: 480px) {
+  .contenedor {
+    padding: 20px 15px;
+    padding-top: 40px;
+  }
+  
+  .texto {
+    font-size: 1.2em;
+    line-height: 1.4;
+    margin-bottom: 25px;
+    letter-spacing: 0.3px;
+  }
+  
+  .botones {
+    gap: 12px;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+  
+  .boton {
+    padding: 12px 25px;
+    font-size: 0.95em;
+    width: 200px;
+    max-width: 80%;
+  }
+}
+
+/* Móviles muy pequeños */
+@media screen and (max-width: 360px) {
+  .contenedor {
+    padding: 15px 10px;
+    padding-top: 30px;
+  }
+  
+  .texto {
+    font-size: 1.1em;
+    line-height: 1.3;
+    margin-bottom: 20px;
+  }
+  
+  .boton {
+    padding: 10px 20px;
+    font-size: 0.9em;
+    width: 180px;
+  }
+}
+
+/* Pantallas muy grandes */
+@media screen and (min-width: 1440px) {
+  .contenedor {
+    max-width: 1000px;
+    padding: 50px;
+  }
+  
+  .texto {
+    font-size: 2em;
+    margin-bottom: 50px;
+    max-width: 900px;
+  }
+  
+  .botones {
+    gap: 30px;
+  }
+  
+  .boton {
+    padding: 18px 50px;
+    font-size: 1.2em;
+  }
+}
+
+/* Ajuste para altura muy pequeña (paisaje en móviles) */
+@media screen and (max-height: 500px) {
+  .contenedor {
+    padding: 15px;
+    justify-content: flex-start;
+    padding-top: 20px;
+  }
+  
+  .texto {
+    font-size: 1.1em;
+    margin-bottom: 15px;
+  }
+  
+  .boton {
+    padding: 8px 20px;
+    font-size: 0.9em;
+  }
+}

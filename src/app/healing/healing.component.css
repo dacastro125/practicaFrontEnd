@@ -1,0 +1,35 @@
+.contenedor {
+  padding: 40px;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #2d2d2d;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.texto {
+  font-size: 2.2em;
+  color: white;
+  line-height: 1.6;
+  text-align: center;
+  margin: 0;
+  font-weight: 400;
+  letter-spacing: 0.5px;
+}
+
+.cursor {
+  animation: blink 1s infinite;
+  color: white;
+}
+
+@keyframes blink {
+  0%, 50% {
+    opacity: 1;
+  }
+  51%, 100% {
+    opacity: 0;
+  }
+}
