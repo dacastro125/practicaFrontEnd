@@ -1,0 +1,10 @@
+Coloca tus fotos aquí con los nombres:
+- photo1.jpg
+- photo2.jpg  
+- photo3.jpg
+- photo4.jpg
+- photo5.jpg
+- photo6.jpg
+
+Tamaño recomendado: 200x200 píxeles o similar
+Formato: JPG, PNG, o WebP 
