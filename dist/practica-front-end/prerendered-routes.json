@@ -1,0 +1,8 @@
+{
+  "routes": {
+    "/practicaFrontEnd": {},
+    "/practicaFrontEnd/inicio": {},
+    "/practicaFrontEnd/reflexion": {},
+    "/practicaFrontEnd/sanar": {}
+  }
+}
